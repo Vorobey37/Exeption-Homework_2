@@ -12,9 +12,13 @@ public class task_1 {
          * вместо этого, необходимо повторно запросить у пользователя ввод данных.
          */
 
+         System.out.println(floatNumber());
+
+
+    }
+        public static float floatNumber() {
          Scanner input = new Scanner (System.in);
          float number = 0;
-
          while (number == 0) {
             System.out.println("Введите дробное число (типа float): ");
             try {
@@ -24,7 +28,8 @@ public class task_1 {
                 System.out.println("Неправильный формат, попробуйте снова: ");
             }
          }
-         System.out.println(number);
+         
          input.close();
+         return number;
     }
 }
